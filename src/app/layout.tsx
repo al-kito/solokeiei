@@ -1,4 +1,4 @@
-
+import type React from "react";
 import "./globals.css";
 
 export const metadata = {
@@ -6,7 +6,7 @@ export const metadata = {
   description: "利益率を守る一人経営の戦略論"
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ja">
       <body className="bg-white text-zinc-900 max-w-3xl mx-auto p-6">
