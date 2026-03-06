@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getPosts } from "@/lib/microcms";
+export const revalidate = 60;
 
 export default async function Home() {
   const posts = await getPosts();

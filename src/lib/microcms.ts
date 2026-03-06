@@ -34,9 +34,6 @@ export async function getPosts() {
       orders: "-publishedAt",
       limit: 100,
     },
-    customRequestInit: {
-      cache: "no-store",
-    },
   });
 
   return data.contents;

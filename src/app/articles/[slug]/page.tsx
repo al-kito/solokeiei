@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { getPostBySlug, getPosts } from "@/lib/microcms";
+export const revalidate = 60;
 
 export async function generateStaticParams() {
   const posts = await getPosts();
