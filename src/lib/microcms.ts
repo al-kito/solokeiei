@@ -30,7 +30,7 @@ export async function getPosts() {
   const data = await client.getList<Post>({
     endpoint: "posts",
     queries: {
-      filters: "status[equals]published",
+      filters: "status[contains]published",
       orders: "-publishedAt",
       limit: 100,
     },
@@ -43,7 +43,7 @@ export async function getPostBySlug(slug: string) {
   const data = await client.getList<Post>({
     endpoint: "posts",
     queries: {
-      filters: `slug[equals]${slug}[and]status[equals]published`,
+      filters: `slug[equals]${slug}[and]status[contains]published`,
       limit: 1,
     },
   });
