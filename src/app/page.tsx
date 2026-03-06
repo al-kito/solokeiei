@@ -10,10 +10,13 @@ export default async function Home() {
   return (
     <main className="space-y-20">
 <section className="relative overflow-hidden rounded-[2rem] border border-zinc-200 bg-stone-50 px-6 py-12 sm:px-10 sm:py-16">
-  <div
-    className="absolute inset-0 bg-cover bg-center opacity-90"
-    style={{ backgroundImage: "url('/hero-bg.svg')" }}
-  />
+  <div className="absolute inset-0 overflow-hidden rounded-[2rem]">
+    <img
+      src="/hero-bg.svg"
+      alt=""
+      className="h-full w-full object-cover opacity-90"
+    />
+  </div>
 
   <div className="absolute inset-0 bg-gradient-to-r from-stone-50 via-stone-50/90 to-stone-50/55" />
 
@@ -84,8 +87,8 @@ export default async function Home() {
       </div>
     </div>
   </div>
-</section>
-      <section className="space-y-6">
+</section>      
+<section className="space-y-6">
         <div className="flex items-end justify-between gap-4">
           <div>
             <h2 className="text-2xl font-semibold tracking-tight text-zinc-900">
