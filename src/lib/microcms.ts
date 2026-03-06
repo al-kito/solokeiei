@@ -19,7 +19,7 @@ export type Post = {
   excerpt?: string;
   body: string;
   topic: Topic;
-  status: "draft" | "review" | "published";
+  status?: string[];
   tags?: string[];
   createdAt: string;
   updatedAt: string;
@@ -49,4 +49,40 @@ export async function getPostBySlug(slug: string) {
   });
 
   return data.contents[0] || null;
+}
+
+export async function getTopics() {
+  const data = await client.getList<Topic>({
+    endpoint: "topics",
+    queries: {
+      limit: 100,
+    },
+  });
+
+  return data.contents;
+}
+
+export async function getTopicBySlug(slug: string) {
+  const data = await client.getList<Topic>({
+    endpoint: "topics",
+    queries: {
+      filters: `slug[equals]${slug}`,
+      limit: 1,
+    },
+  });
+
+  return data.contents[0] || null;
+}
+
+export async function getPostsByTopicId(topicId: string) {
+  const data = await client.getList<Post>({
+    endpoint: "posts",
+    queries: {
+      filters: `topic[equals]${topicId}[and]status[contains]published`,
+      orders: "-publishedAt",
+      limit: 100,
+    },
+  });
+
+  return data.contents;
 }
