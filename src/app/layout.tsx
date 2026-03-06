@@ -46,29 +46,33 @@ export default function RootLayout({
         <div className="mx-auto max-w-5xl px-6 py-8">
 
           {/* header */}
-          <header className="mb-12 flex items-center justify-between border-b border-zinc-200 pb-6">
+<header className="mb-8 flex items-center justify-between border-b border-zinc-200 pb-4">
 
-            <Link href="/" className="flex items-center gap-3 no-underline">
-              <Image
-                src="/logo.svg"
-                alt="一人経営戦略"
-                width={140}
-                height={40}
-                priority
-              />
-            </Link>
+  <Link href="/" className="flex items-center gap-3 no-underline">
+    <Image
+      src="/logo.svg"
+      alt="一人経営戦略"
+      width={36}
+      height={36}
+      priority
+    />
 
-            <nav className="flex items-center gap-6 text-sm text-zinc-600">
-              <Link href="/articles" className="hover:text-zinc-900">
-                記事
-              </Link>
+    <span className="text-lg font-semibold text-zinc-900">
+      一人経営戦略
+    </span>
+  </Link>
 
-              <Link href="/why" className="hover:text-zinc-900">
-                Why
-              </Link>
-            </nav>
+  <nav className="flex items-center gap-6 text-sm text-zinc-600">
+    <Link href="/articles" className="hover:text-zinc-900">
+      記事
+    </Link>
 
-          </header>
+    <Link href="/why" className="hover:text-zinc-900">
+      Why
+    </Link>
+  </nav>
+
+</header>
 
           {/* main */}
           <main>{children}</main>
