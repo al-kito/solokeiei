@@ -23,22 +23,18 @@
 
   <rect width="1600" height="900" fill="url(#bg)"/>
 
-  <!-- large soft circles -->
   <circle cx="290" cy="110" r="260" fill="url(#shapeA)"/>
   <circle cx="150" cy="760" r="220" fill="url(#shapeB)"/>
   <circle cx="1360" cy="180" r="240" fill="url(#shapeA)"/>
   <circle cx="1120" cy="760" r="320" fill="url(#shapeB)"/>
 
-  <!-- diagonal translucent ribbon -->
   <path d="M980 -20 L1200 -20 L620 620 L400 620 Z" fill="url(#shapeC)"/>
   <path d="M1210 120 L1360 120 L770 720 L620 720 Z" fill="url(#shapeC)" opacity="0.85"/>
 
-  <!-- curved translucent bands -->
   <path d="M350 980 C300 720 420 520 720 380 C880 300 980 190 980 -60 L1210 -60 C1210 270 1080 420 850 520 C630 615 560 735 610 980 Z"
         fill="url(#shapeA)" opacity="0.9"/>
   <path d="M-80 820 C140 730 330 760 500 900 L-80 980 Z" fill="url(#shapeB)" opacity="0.65"/>
 
-  <!-- subtle dotted accents -->
   <g fill="#d6d3d1" opacity="0.7">
     <circle cx="1310" cy="220" r="2.5"/><circle cx="1338" cy="220" r="2.5"/><circle cx="1366" cy="220" r="2.5"/><circle cx="1394" cy="220" r="2.5"/><circle cx="1422" cy="220" r="2.5"/>
     <circle cx="1310" cy="248" r="2.5"/><circle cx="1338" cy="248" r="2.5"/><circle cx="1366" cy="248" r="2.5"/><circle cx="1394" cy="248" r="2.5"/><circle cx="1422" cy="248" r="2.5"/>
@@ -48,9 +44,4 @@
   <g fill="#d6d3d1" opacity="0.55">
     <circle cx="1080" cy="690" r="2.5"/><circle cx="1108" cy="690" r="2.5"/><circle cx="1136" cy="690" r="2.5"/><circle cx="1164" cy="690" r="2.5"/>
     <circle cx="1080" cy="718" r="2.5"/><circle cx="1108" cy="718" r="2.5"/><circle cx="1136" cy="718" r="2.5"/><circle cx="1164" cy="718" r="2.5"/>
-    <circle cx="1080" cy="746" r="2.5"/><circle cx="1108" cy="746" r="2.5"/><circle cx="1136" cy="746" r="2.5"/><circle cx="1164" cy="746" r="2.5"/>
-  </g>
-
-  <!-- ultra subtle glow -->
-  <ellipse cx="860" cy="450" rx="500" ry="280" fill="#ffffff" opacity="0.23" filter="url(#blurSoft)"/>
-</svg>
+    <circle cx="1080" cy="746" r="2.
