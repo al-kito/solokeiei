@@ -1,46 +1,68 @@
-import type React from "react";
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import "./globals.css";
 
-export const metadata = {
-  title: "一人経営戦略",
-  description: "利益率を守る一人経営の戦略論",
+export const metadata: Metadata = {
+  title: {
+    default: "一人経営戦略",
+    template: "%s | 一人経営戦略",
+  },
+  description: "拡大しないという戦略。安定という名の不自由さからの脱却。",
   icons: {
-    icon: "/favicon.svg"
-  }
+    icon: "/favicon.svg",
+  },
+  openGraph: {
+    title: "一人経営戦略",
+    description: "拡大しないという戦略。安定という名の不自由さからの脱却。",
+    url: "https://solokeiei.jp",
+    siteName: "一人経営戦略",
+    images: [
+      {
+        url: "/og-image.svg",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "ja_JP",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "一人経営戦略",
+    description: "拡大しないという戦略。安定という名の不自由さからの脱却。",
+    images: ["/og-image.svg"],
+  },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="ja">
       <body className="bg-stone-50 text-zinc-900">
-        <div className="max-w-5xl mx-auto px-6 py-8">
+        <div className="mx-auto max-w-5xl px-6 py-8">
 
+          {/* header */}
           <header className="mb-12 flex items-center justify-between border-b border-zinc-200 pb-6">
 
             <Link href="/" className="flex items-center gap-3 no-underline">
               <Image
                 src="/logo.svg"
-                alt="solokeiei"
-                width={36}
-                height={36}
+                alt="一人経営戦略"
+                width={140}
+                height={40}
+                priority
               />
-
-              <div>
-                <h1 className="text-xl font-bold text-zinc-900">
-                  一人経営戦略
-                </h1>
-                <p className="text-sm text-zinc-600">
-                  拡大しないという戦略。利益率を守る経営。
-                </p>
-              </div>
             </Link>
 
             <nav className="flex items-center gap-6 text-sm text-zinc-600">
               <Link href="/articles" className="hover:text-zinc-900">
                 記事
               </Link>
+
               <Link href="/why" className="hover:text-zinc-900">
                 Why
               </Link>
@@ -48,7 +70,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
           </header>
 
-          {children}
+          {/* main */}
+          <main>{children}</main>
+
+          {/* footer */}
+          <footer className="mt-20 border-t border-zinc-200 pt-6 text-sm text-zinc-500">
+            <p>© {new Date().getFullYear()} solokeiei.jp</p>
+          </footer>
 
         </div>
       </body>

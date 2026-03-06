@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#fafaf9"/>
+
+  <!-- logo mark -->
+  <rect x="120" y="180" width="28" height="200" rx="14" fill="#18181b"/>
+  <rect x="90" y="360" width="88" height="20" rx="10" fill="#18181b"/>
+
+  <!-- title -->
+  <text x="260" y="280"
+        font-family="Inter, system-ui, -apple-system, sans-serif"
+        font-size="72"
+        font-weight="700"
+        fill="#18181b">
+        一人経営戦略
+  </text>
+
+  <!-- subtitle line 1 -->
+  <text x="260" y="350"
+        font-family="Inter, system-ui, -apple-system, sans-serif"
+        font-size="30"
+        fill="#52525b">
+        拡大しないという戦略。
+  </text>
+
+  <!-- subtitle line 2 -->
+  <text x="260" y="395"
+        font-family="Inter, system-ui, -apple-system, sans-serif"
+        font-size="30"
+        fill="#52525b">
+        安定という名の不自由さからの脱却。
+  </text>
+
+  <!-- tagline -->
+  <text x="120" y="500"
+        font-family="Inter, system-ui, -apple-system, sans-serif"
+        font-size="44"
+        font-weight="700"
+        fill="#18181b">
+        一人で働くことは、不安定ではなく
+  </text>
+
+  <text x="120" y="560"
+        font-family="Inter, system-ui, -apple-system, sans-serif"
+        font-size="44"
+        font-weight="700"
+        fill="#18181b">
+        「選択肢」を持つこと。
+  </text>
+</svg>
