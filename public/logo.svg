@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="160" viewBox="0 0 640 160" role="img" aria-labelledby="title desc">
+  <title id="title">solokeiei minimal logo</title>
+  <desc id="desc">Minimal vertical bar mark with solokeiei wordmark</desc>
+  <rect width="640" height="160" fill="#fafaf9"/>
+  <rect x="44" y="34" width="18" height="92" rx="9" fill="#18181b"/>
+  <text x="92" y="102"
+        font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="56" font-weight="700" fill="#18181b">solokeiei</text>
+</svg>
