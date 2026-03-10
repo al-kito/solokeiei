@@ -3,6 +3,12 @@ import { getPosts, getTopics } from "@/lib/microcms";
 
 export const revalidate = 60;
 
+const topicCardBackgrounds = [
+  "bg-gradient-to-br from-zinc-50 via-white to-stone-100",
+  "bg-gradient-to-br from-slate-50 via-white to-zinc-100",
+  "bg-gradient-to-br from-stone-50 via-white to-zinc-100",
+];
+
 export default async function Home() {
   const [posts, topics] = await Promise.all([getPosts(), getTopics()]);
   const latestPosts = posts.slice(0, 6);
@@ -90,41 +96,35 @@ export default async function Home() {
           </div>
         </div>
 
-        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-          {topics.map((topic, index) => (
-            <Link
-              key={topic.id}
-              href={`/topics/${topic.slug}`}
-              className="group relative overflow-hidden rounded-3xl border border-zinc-200 bg-white p-6 no-underline transition hover:-translate-y-0.5 hover:border-zinc-900 hover:shadow-sm"
-            >
-              <div
-                className={`absolute inset-0 opacity-70 transition group-hover:opacity-90 ${
-                  index % 3 === 0
-                    ? "bg-gradient-to-br from-zinc-50 via-white to-stone-100"
-                    : index % 3 === 1
-                    ? "bg-gradient-to-br from-slate-50 via-white to-zinc-100"
-                    : "bg-gradient-to-br from-stone-50 via-white to-zinc-100"
-                }`}
-              />
+<div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+  {topics.map((topic, index) => (
+    <Link
+      key={topic.id}
+      href={`/topics/${topic.slug}`}
+      className="group relative overflow-hidden rounded-3xl border border-zinc-200 bg-white p-6 no-underline transition hover:-translate-y-0.5 hover:border-zinc-900 hover:shadow-sm"
+    >
+      <div
+        className={`absolute inset-0 ${topicCardBackgrounds[index % topicCardBackgrounds.length]} opacity-70 transition group-hover:opacity-90`}
+      />
 
-              <div className="relative space-y-3">
-                <div className="inline-flex rounded-full bg-white/80 px-3 py-1 text-xs font-medium text-zinc-600 backdrop-blur">
-                  Topic
-                </div>
-
-                <h3 className="text-lg font-semibold text-zinc-900 group-hover:underline">
-                  {topic.name}
-                </h3>
-
-                <p className="text-sm leading-7 text-zinc-600">
-                  {topic.description || "このテーマの記事をまとめて読めます。"}
-                </p>
-
-                <div className="pt-1 text-sm text-zinc-500">このテーマを見る →</div>
-              </div>
-            </Link>
-          ))}
+      <div className="relative space-y-3">
+        <div className="inline-flex rounded-full bg-white/80 px-3 py-1 text-xs font-medium text-zinc-600 backdrop-blur">
+          Topic
         </div>
+
+        <h3 className="text-lg font-semibold text-zinc-900 group-hover:underline">
+          {topic.name}
+        </h3>
+
+        <p className="text-sm leading-7 text-zinc-600">
+          {topic.description || "このテーマの記事をまとめて読めます。"}
+        </p>
+
+        <div className="pt-1 text-sm text-zinc-500">このテーマを見る →</div>
+      </div>
+    </Link>
+  ))}
+</div>
       </section>
 
       <section className="grid gap-8 lg:grid-cols-[1.25fr_0.75fr]">
