@@ -9,86 +9,85 @@ export default async function Home() {
 
   return (
     <main className="space-y-20">
-<section className="relative overflow-hidden rounded-[2rem] border border-zinc-200 bg-stone-50 px-6 py-12 sm:px-10 sm:py-16">
-  <div className="absolute inset-0 overflow-hidden rounded-[2rem]">
-    <img
-      src="/hero-bg.svg"
-      alt=""
-      className="h-full w-full object-cover opacity-90"
-    />
-  </div>
+      <section className="relative overflow-hidden rounded-[2rem] border border-zinc-200 bg-stone-50 px-6 py-12 sm:px-10 sm:py-16">
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-100"
+          style={{ backgroundImage: "url('/hero-bg.svg')" }}
+        />
 
-  <div className="absolute inset-0 bg-gradient-to-r from-stone-50 via-stone-50/90 to-stone-50/55" />
+        <div className="absolute inset-0 bg-gradient-to-r from-white/45 via-white/20 to-transparent" />
 
-  <div className="relative grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
-    <div className="max-w-3xl space-y-6">
-      <p className="text-sm tracking-[0.18em] text-zinc-500 uppercase">
-        solokeiei.jp
-      </p>
+        <div className="relative grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
+          <div className="max-w-3xl space-y-6">
+            <p className="text-sm tracking-[0.18em] text-zinc-500 uppercase">
+              solokeiei.jp
+            </p>
 
-      <h1 className="text-4xl font-semibold leading-tight text-zinc-900 sm:text-5xl lg:text-6xl">
-        一人で働くことは、
-        <br className="hidden sm:block" />
-        不安定ではなく
-        <br className="hidden sm:block" />
-        「選択肢」を持つこと。
-      </h1>
+            <h1 className="text-4xl font-semibold leading-tight text-zinc-900 sm:text-5xl lg:text-6xl">
+              一人で働くことは、
+              <br className="hidden sm:block" />
+              不安定ではなく
+              <br className="hidden sm:block" />
+              「選択肢」を持つこと。
+            </h1>
 
-      <p className="max-w-2xl text-base leading-8 text-zinc-700 sm:text-lg">
-        会社員、副業、フリーランス、法人化、一人社長。
-        このメディアは、組織に依存しすぎず、小さく強く働くための選択肢を整理する場所です。
-      </p>
+            <p className="max-w-2xl text-base leading-8 text-zinc-700 sm:text-lg">
+              会社員、副業、フリーランス、法人化、一人社長。
+              このメディアは、組織に依存しすぎず、小さく強く働くための選択肢を整理する場所です。
+            </p>
 
-      <div className="flex flex-wrap gap-3 pt-2">
-        <Link
-          href="/articles"
-          className="rounded-full bg-zinc-900 px-5 py-3 text-sm font-medium text-white no-underline transition hover:bg-zinc-800"
-        >
-          記事一覧を見る
-        </Link>
-        <Link
-          href="/why"
-          className="rounded-full border border-zinc-300 bg-white/90 px-5 py-3 text-sm font-medium text-zinc-800 no-underline transition hover:border-zinc-900 hover:bg-white"
-        >
-          なぜこのメディアを作るのか
-        </Link>
-      </div>
-    </div>
+            <div className="flex flex-wrap gap-3 pt-2">
+              <Link
+                href="/articles"
+                className="rounded-full bg-zinc-900 px-5 py-3 text-sm font-medium text-white no-underline transition hover:bg-zinc-800"
+              >
+                記事一覧を見る
+              </Link>
+              <Link
+                href="/why"
+                className="rounded-full border border-zinc-300 bg-white/90 px-5 py-3 text-sm font-medium text-zinc-800 no-underline transition hover:border-zinc-900 hover:bg-white"
+              >
+                なぜこのメディアを作るのか
+              </Link>
+            </div>
+          </div>
 
-    <div className="hidden lg:block">
-      <div className="ml-auto max-w-md rounded-3xl border border-white/70 bg-white/70 p-6 backdrop-blur">
-        <p className="text-sm text-zinc-500">このメディアが扱うテーマ</p>
-        <div className="mt-4 flex flex-wrap gap-2">
-          {[
-            "会社員から独立",
-            "副業",
-            "フリーランス",
-            "法人化",
-            "一人社長",
-            "利益率",
-            "採用しない経営",
-          ].map((item) => (
-            <span
-              key={item}
-              className="rounded-full border border-zinc-200 bg-white px-3 py-1.5 text-xs text-zinc-700"
-            >
-              {item}
-            </span>
-          ))}
+          <div className="hidden lg:block">
+            <div className="ml-auto max-w-md rounded-3xl border border-white/70 bg-white/75 p-6 backdrop-blur">
+              <p className="text-sm text-zinc-500">このメディアが扱うテーマ</p>
+
+              <div className="mt-4 flex flex-wrap gap-2">
+                {[
+                  "会社員から独立",
+                  "副業",
+                  "フリーランス",
+                  "法人化",
+                  "一人社長",
+                  "利益率",
+                  "採用しない経営",
+                ].map((item) => (
+                  <span
+                    key={item}
+                    className="rounded-full border border-zinc-200 bg-white px-3 py-1.5 text-xs text-zinc-700"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+
+              <div className="mt-6 border-t border-zinc-200 pt-4">
+                <p className="text-sm leading-7 text-zinc-600">
+                  拡大そのものを正解にしない。
+                  利益率、自由度、意思決定の速さを守りながら、
+                  小さく続けるための戦略を考えます。
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div className="mt-6 border-t border-zinc-200 pt-4">
-          <p className="text-sm leading-7 text-zinc-600">
-            拡大そのものを正解にしない。
-            利益率、自由度、意思決定の速さを守りながら、
-            小さく続けるための戦略を考えます。
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>      
-<section className="space-y-6">
+      <section className="space-y-6">
         <div className="flex items-end justify-between gap-4">
           <div>
             <h2 className="text-2xl font-semibold tracking-tight text-zinc-900">
