@@ -9,26 +9,18 @@ export default async function Home() {
 
   return (
     <main className="space-y-20">
-      <section className="relative overflow-hidden rounded-[2rem] border border-zinc-200 bg-stone-50 px-6 py-12 sm:px-10 sm:py-16">
+      <section className="relative overflow-hidden rounded-[2rem] border border-zinc-200 bg-stone-50 px-6 py-10 sm:px-10 sm:py-12">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-100"
           style={{ backgroundImage: "url('/hero-bg.svg')" }}
         />
 
-        <div className="absolute inset-0 bg-gradient-to-r from-white/45 via-white/20 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-white/35 via-white/15 to-transparent" />
 
-        <div className="relative grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
-          <div className="max-w-3xl space-y-6">
-            <p className="text-sm tracking-[0.18em] text-zinc-500 uppercase">
-              solokeiei.jp
-            </p>
-
-            <h1 className="text-4xl font-semibold leading-tight text-zinc-900 sm:text-5xl lg:text-6xl">
-              一人で働くことは、
-              <br className="hidden sm:block" />
-              不安定ではなく
-              <br className="hidden sm:block" />
-              「選択肢」を持つこと。
+        <div className="relative grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
+          <div className="max-w-3xl space-y-5">
+            <h1 className="text-3xl font-semibold leading-tight text-zinc-900 sm:text-4xl lg:text-5xl">
+              一人で働くことは不安定ではなく「選択肢」を持つこと。
             </h1>
 
             <p className="max-w-2xl text-base leading-8 text-zinc-700 sm:text-lg">
@@ -36,7 +28,7 @@ export default async function Home() {
               このメディアは、組織に依存しすぎず、小さく強く働くための選択肢を整理する場所です。
             </p>
 
-            <div className="flex flex-wrap gap-3 pt-2">
+            <div className="flex flex-wrap gap-3 pt-1">
               <Link
                 href="/articles"
                 className="rounded-full bg-zinc-900 px-5 py-3 text-sm font-medium text-white no-underline transition hover:bg-zinc-800"
@@ -53,7 +45,7 @@ export default async function Home() {
           </div>
 
           <div className="hidden lg:block">
-            <div className="ml-auto max-w-md rounded-3xl border border-white/70 bg-white/75 p-6 backdrop-blur">
+            <div className="ml-auto max-w-md rounded-3xl border border-white/70 bg-white/80 p-6 backdrop-blur">
               <p className="text-sm text-zinc-500">このメディアが扱うテーマ</p>
 
               <div className="mt-4 flex flex-wrap gap-2">
@@ -77,8 +69,7 @@ export default async function Home() {
 
               <div className="mt-6 border-t border-zinc-200 pt-4">
                 <p className="text-sm leading-7 text-zinc-600">
-                  拡大そのものを正解にしない。
-                  利益率、自由度、意思決定の速さを守りながら、
+                  拡大そのものを正解にしない。利益率、自由度、意思決定の速さを守りながら、
                   小さく続けるための戦略を考えます。
                 </p>
               </div>
@@ -100,14 +91,24 @@ export default async function Home() {
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-          {topics.map((topic) => (
+          {topics.map((topic, index) => (
             <Link
               key={topic.id}
               href={`/topics/${topic.slug}`}
-              className="group rounded-3xl border border-zinc-200 bg-white p-6 no-underline transition hover:-translate-y-0.5 hover:border-zinc-900 hover:shadow-sm"
+              className="group relative overflow-hidden rounded-3xl border border-zinc-200 bg-white p-6 no-underline transition hover:-translate-y-0.5 hover:border-zinc-900 hover:shadow-sm"
             >
-              <div className="space-y-3">
-                <div className="inline-flex rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-600">
+              <div
+                className={`absolute inset-0 opacity-70 transition group-hover:opacity-90 ${
+                  index % 3 === 0
+                    ? "bg-gradient-to-br from-zinc-50 via-white to-stone-100"
+                    : index % 3 === 1
+                    ? "bg-gradient-to-br from-slate-50 via-white to-zinc-100"
+                    : "bg-gradient-to-br from-stone-50 via-white to-zinc-100"
+                }`}
+              />
+
+              <div className="relative space-y-3">
+                <div className="inline-flex rounded-full bg-white/80 px-3 py-1 text-xs font-medium text-zinc-600 backdrop-blur">
                   Topic
                 </div>
 

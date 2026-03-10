@@ -78,9 +78,20 @@ export default function RootLayout({
           <main>{children}</main>
 
           {/* footer */}
-          <footer className="mt-20 border-t border-zinc-200 pt-6 text-sm text-zinc-500">
-            <p>© {new Date().getFullYear()} solokeiei.jp</p>
-          </footer>
+<footer className="mt-20 rounded-3xl border border-zinc-200 bg-zinc-900 px-6 py-6 text-sm text-zinc-300">
+  <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+    <div>
+      <p className="font-medium text-white">一人経営戦略 / solokeiei.jp</p>
+      <p className="mt-1 text-zinc-400">
+        拡大しないという戦略。安定という名の不自由さからの脱却。
+      </p>
+    </div>
+
+    <div className="text-zinc-400">
+      © 2026 solokeiei.jp
+    </div>
+  </div>
+</footer>
 
         </div>
       </body>
