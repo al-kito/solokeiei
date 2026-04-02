@@ -24,7 +24,7 @@ export default async function Home() {
 
   return (
     <main className="space-y-20">
-      <section className="relative overflow-hidden rounded-3xl border border-zinc-200 bg-stone-50 px-6 py-10 sm:px-10 sm:py-12">
+      <section className="relative overflow-hidden rounded-1xl border border-zinc-200 bg-stone-50 px-6 py-10 sm:px-10 sm:py-12">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-100"
           style={{ backgroundImage: "url('/hero-bg.svg')" }}
