@@ -6,15 +6,27 @@ export const revalidate = 60;
 const topicCardBackgrounds = [
   {
     background:
-      "linear-gradient(135deg, rgba(244,244,245,0.95) 0%, rgba(255,255,255,0.98) 45%, rgba(231,229,228,0.95) 100%)",
+      "linear-gradient(135deg, rgba(254,243,199,0.7) 0%, rgba(255,255,255,0.95) 50%, rgba(253,230,138,0.5) 100%)",
   },
   {
     background:
-      "linear-gradient(135deg, rgba(241,245,249,0.95) 0%, rgba(255,255,255,0.98) 45%, rgba(228,228,231,0.95) 100%)",
+      "linear-gradient(135deg, rgba(209,250,229,0.7) 0%, rgba(255,255,255,0.95) 50%, rgba(167,243,208,0.5) 100%)",
   },
   {
     background:
-      "linear-gradient(135deg, rgba(245,245,244,0.96) 0%, rgba(255,255,255,0.98) 45%, rgba(228,228,231,0.95) 100%)",
+      "linear-gradient(135deg, rgba(224,231,255,0.7) 0%, rgba(255,255,255,0.95) 50%, rgba(199,210,254,0.5) 100%)",
+  },
+  {
+    background:
+      "linear-gradient(135deg, rgba(255,228,230,0.7) 0%, rgba(255,255,255,0.95) 50%, rgba(254,205,211,0.5) 100%)",
+  },
+  {
+    background:
+      "linear-gradient(135deg, rgba(224,242,254,0.7) 0%, rgba(255,255,255,0.95) 50%, rgba(186,230,253,0.5) 100%)",
+  },
+  {
+    background:
+      "linear-gradient(135deg, rgba(237,233,254,0.7) 0%, rgba(255,255,255,0.95) 50%, rgba(221,214,254,0.5) 100%)",
   },
 ];
 
@@ -46,13 +58,13 @@ export default async function Home() {
             <div className="flex flex-wrap gap-3 pt-1">
               <Link
                 href="/articles"
-                className="rounded-full bg-zinc-900 px-5 py-3 text-sm font-medium text-white no-underline transition hover:bg-zinc-800"
+                className="rounded-full bg-amber-600 px-5 py-3 text-sm font-medium text-white no-underline transition hover:bg-amber-700"
               >
                 記事一覧を見る
               </Link>
               <Link
                 href="/why"
-                className="rounded-full border border-zinc-300 bg-white/90 px-5 py-3 text-sm font-medium text-zinc-800 no-underline transition hover:border-zinc-900 hover:bg-white"
+                className="rounded-full border border-zinc-300 bg-white/90 px-5 py-3 text-sm font-medium text-zinc-800 no-underline transition hover:border-amber-400 hover:bg-white hover:text-amber-700"
               >
                 なぜこのメディアを作るのか
               </Link>
@@ -75,7 +87,7 @@ export default async function Home() {
                 ].map((item) => (
                   <span
                     key={item}
-                    className="rounded-full border border-zinc-200 bg-white px-3 py-1.5 text-xs text-zinc-700"
+                    className="rounded-full border border-amber-200 bg-amber-50 px-3 py-1.5 text-xs text-amber-800"
                   >
                     {item}
                   </span>
@@ -110,7 +122,7 @@ export default async function Home() {
             <Link
               key={topic.id}
               href={`/topics/${topic.slug}`}
-              className="group relative overflow-hidden rounded-2xl border border-zinc-200 bg-white p-6 no-underline transition hover:-translate-y-0.5 hover:border-zinc-900 hover:shadow-sm"
+              className="group relative overflow-hidden rounded-2xl border border-zinc-200 bg-white p-6 no-underline transition hover:-translate-y-0.5 hover:border-amber-400 hover:shadow-sm"
             >
               <div
                 className="absolute inset-0 opacity-100 transition group-hover:opacity-100"
@@ -119,7 +131,7 @@ export default async function Home() {
               <div className="absolute right-[-10px] top-[-10px] h-24 w-24 rounded-full bg-white/55 blur-2xl" />
 
               <div className="relative space-y-3">
-                <div className="inline-flex rounded-full bg-white/85 px-3 py-1 text-xs font-medium text-zinc-600 backdrop-blur">
+                <div className="inline-flex rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-xs font-medium text-amber-700 backdrop-blur">
                   Topic
                 </div>
 
@@ -131,7 +143,7 @@ export default async function Home() {
                   {topic.description || "このテーマの記事をまとめて読めます。"}
                 </p>
 
-                <div className="pt-1 text-sm text-zinc-500">このテーマを見る →</div>
+                <div className="pt-1 text-sm font-medium text-amber-600">このテーマを見る →</div>
               </div>
             </Link>
           ))}
@@ -152,7 +164,7 @@ export default async function Home() {
 
             <Link
               href="/articles"
-              className="text-sm text-zinc-600 underline decoration-zinc-300 underline-offset-4 hover:decoration-zinc-900"
+              className="text-sm text-amber-600 underline decoration-amber-300 underline-offset-4 hover:decoration-amber-600"
             >
               すべて見る
             </Link>
@@ -162,14 +174,14 @@ export default async function Home() {
             {latestPosts.map((post, index) => (
               <article
                 key={post.id}
-                className="rounded-2xl border border-zinc-200 bg-white p-6 transition hover:border-zinc-900 hover:shadow-sm"
+                className="rounded-2xl border border-zinc-200 bg-white p-6 transition hover:border-amber-300 hover:shadow-sm"
               >
                 <div className="mb-3 flex items-center justify-between gap-4">
                   <div className="flex items-center gap-2 text-sm text-zinc-500">
                     {post.topic?.slug ? (
                       <Link
                         href={`/topics/${post.topic.slug}`}
-                        className="rounded-full bg-zinc-100 px-3 py-1 no-underline hover:bg-zinc-200"
+                        className="rounded-full bg-amber-50 px-3 py-1 text-xs font-medium text-amber-700 no-underline transition hover:bg-amber-100"
                       >
                         {post.topic.name}
                       </Link>
@@ -178,7 +190,7 @@ export default async function Home() {
                     )}
                   </div>
 
-                  <span className="text-xs text-zinc-400">
+                  <span className="text-xs font-medium text-amber-400">
                     {String(index + 1).padStart(2, "0")}
                   </span>
                 </div>
@@ -214,8 +226,8 @@ export default async function Home() {
         </div>
 
         <aside className="space-y-4">
-          <section className="rounded-2xl border border-zinc-200 bg-zinc-50 p-6">
-            <p className="text-sm text-zinc-500">このメディアについて</p>
+          <section className="rounded-2xl border border-amber-200 bg-amber-50 p-6">
+            <p className="text-sm text-amber-600">このメディアについて</p>
             <h2 className="mt-2 text-xl font-semibold leading-snug text-zinc-900">
               安定よりも、
               <br />
@@ -228,7 +240,7 @@ export default async function Home() {
             <div className="mt-5">
               <Link
                 href="/why"
-                className="text-sm font-medium text-zinc-900 underline decoration-zinc-300 underline-offset-4 hover:decoration-zinc-900"
+                className="text-sm font-medium text-amber-600 underline decoration-amber-300 underline-offset-4 hover:decoration-amber-600"
               >
                 whyページを読む
               </Link>
@@ -249,7 +261,7 @@ export default async function Home() {
             <div className="mt-3 space-y-3">
               <Link
                 href="/why"
-                className="block rounded-2xl bg-zinc-100 px-4 py-3 text-sm font-medium text-zinc-900 no-underline transition hover:bg-zinc-200"
+                className="block rounded-2xl bg-amber-50 px-4 py-3 text-sm font-medium text-amber-800 no-underline transition hover:bg-amber-100"
               >
                 なぜ一人で働くのか
               </Link>

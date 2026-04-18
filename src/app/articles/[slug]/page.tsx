@@ -32,7 +32,7 @@ export default async function ArticleDetailPage({
               {post.topic?.slug ? (
                 <Link
                   href={`/topics/${post.topic.slug}`}
-                  className="rounded-full bg-zinc-100 px-3 py-1 no-underline hover:bg-zinc-200"
+                  className="rounded-full bg-amber-50 px-3 py-1 text-xs font-medium text-amber-700 no-underline transition hover:bg-amber-100"
                 >
                   {post.topic.name}
                 </Link>
@@ -87,7 +87,7 @@ export default async function ArticleDetailPage({
               [&_a]:underline-offset-4
               [&_blockquote]:my-8
               [&_blockquote]:border-l-4
-              [&_blockquote]:border-zinc-300
+              [&_blockquote]:border-amber-400
               [&_blockquote]:bg-zinc-50
               [&_blockquote]:px-5
               [&_blockquote]:py-4
@@ -105,7 +105,7 @@ export default async function ArticleDetailPage({
               [&_h3]:mt-10
               [&_h3]:mb-4
               [&_h3]:border-l-4
-              [&_h3]:border-zinc-300
+              [&_h3]:border-amber-400
               [&_h3]:pl-3
               [&_h3]:text-xl
               [&_h3]:font-semibold
@@ -122,9 +122,9 @@ export default async function ArticleDetailPage({
       <section className="grid gap-4 sm:grid-cols-2">
         <Link
           href="/articles"
-          className="rounded-3xl border border-zinc-200 bg-white p-6 no-underline transition hover:border-zinc-900 hover:shadow-sm"
+          className="rounded-3xl border border-zinc-200 bg-white p-6 no-underline transition hover:border-amber-300 hover:shadow-sm"
         >
-          <p className="text-sm text-zinc-500">Articles</p>
+          <p className="text-sm text-amber-600">Articles</p>
           <h2 className="mt-2 text-lg font-semibold text-zinc-900">
             記事一覧を見る
           </h2>
@@ -136,9 +136,9 @@ export default async function ArticleDetailPage({
         {post.topic?.slug ? (
           <Link
             href={`/topics/${post.topic.slug}`}
-            className="rounded-3xl border border-zinc-200 bg-white p-6 no-underline transition hover:border-zinc-900 hover:shadow-sm"
+            className="rounded-3xl border border-zinc-200 bg-white p-6 no-underline transition hover:border-amber-300 hover:shadow-sm"
           >
-            <p className="text-sm text-zinc-500">Topic</p>
+            <p className="text-sm text-amber-600">Topic</p>
             <h2 className="mt-2 text-lg font-semibold text-zinc-900">
               {post.topic.name}の記事をもっと読む
             </h2>

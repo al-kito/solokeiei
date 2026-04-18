@@ -87,10 +87,10 @@ export default function RootLayout({
             </Link>
 
             <nav className="flex items-center gap-6 text-sm text-zinc-600">
-              <Link href="/articles" className="hover:text-zinc-900">
+              <Link href="/articles" className="transition hover:text-amber-600">
                 記事
               </Link>
-              <Link href="/why" className="hover:text-zinc-900">
+              <Link href="/why" className="transition hover:text-amber-600">
                 Why
               </Link>
             </nav>
