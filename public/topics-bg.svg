@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" fill="none">
+  <defs>
+    <pattern id="topicDots" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#D97706" opacity="0.14"/>
+    </pattern>
+    <linearGradient id="topicAmber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D"/>
+      <stop offset="100%" stop-color="#FBBF24"/>
+    </linearGradient>
+    <linearGradient id="topicIndigo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A5B4FC"/>
+      <stop offset="100%" stop-color="#818CF8"/>
+    </linearGradient>
+    <linearGradient id="topicEmerald" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6EE7B7"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Dot grid -->
+  <rect width="1200" height="480" fill="url(#topicDots)"/>
+
+  <!-- Large amber blob — top right -->
+  <path
+    d="M 980 -60
+       C 1120 -100 1260 -20 1250 100
+       C 1242 190 1160 240 1050 220
+       C 940 200 870 130 900 60
+       C 926 -4 840 -20 980 -60 Z"
+    fill="url(#topicAmber)"
+    opacity="0.55"
+  />
+
+  <!-- Indigo blob — left side -->
+  <path
+    d="M -60 120
+       C 40 60 180 90 200 200
+       C 218 296 130 368 10 372
+       C -100 376 -170 296 -148 206
+       C -128 126 -160 180 -60 120 Z"
+    fill="url(#topicIndigo)"
+    opacity="0.5"
+  />
+
+  <!-- Emerald blob — bottom right -->
+  <path
+    d="M 1000 360
+       C 1090 320 1220 350 1230 440
+       C 1238 510 1140 540 1020 525
+       C 910 510 860 458 910 400
+       C 950 355 910 400 1000 360 Z"
+    fill="url(#topicEmerald)"
+    opacity="0.55"
+  />
+
+  <!-- Amber small blob — bottom left -->
+  <path
+    d="M 80 380
+       C 150 348 260 362 276 420
+       C 290 468 220 500 130 492
+       C 46 484 -10 448 14 408
+       C 34 374 10 412 80 380 Z"
+    fill="#FDE68A"
+    opacity="0.65"
+  />
+
+  <!-- Abstract direction arrows — center area -->
+  <path d="M 520 300 L 568 252 L 616 300" stroke="#F59E0B" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.4"/>
+  <path d="M 548 330 L 596 282 L 644 330" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.25"/>
+
+  <!-- Concentric arcs — left center -->
+  <path d="M 240 440 Q 320 340 440 310" stroke="#FBBF24" stroke-width="3.5" stroke-linecap="round" fill="none" opacity="0.4"/>
+  <path d="M 220 440 Q 310 318 440 280" stroke="#FBBF24" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.25"/>
+
+  <!-- White highlight circles -->
+  <circle cx="1100" cy="80" r="34" fill="white" opacity="0.4"/>
+  <circle cx="940" cy="160" r="18" fill="white" opacity="0.45"/>
+  <circle cx="1180" cy="200" r="22" fill="white" opacity="0.35"/>
+
+  <!-- Small decorative circles -->
+  <circle cx="360" cy="60" r="12" fill="#FBBF24" opacity="0.6"/>
+  <circle cx="480" cy="40" r="8" fill="#FCD34D" opacity="0.65"/>
+  <circle cx="580" cy="80" r="10" fill="#FDE68A" opacity="0.55"/>
+  <circle cx="160" cy="340" r="10" fill="#818CF8" opacity="0.5"/>
+  <circle cx="1060" cy="420" r="12" fill="#34D399" opacity="0.5"/>
+
+  <!-- Dot cluster — top right -->
+  <g fill="#D97706" opacity="0.45">
+    <circle cx="1100" cy="20" r="3"/>
+    <circle cx="1130" cy="20" r="3"/>
+    <circle cx="1160" cy="20" r="3"/>
+    <circle cx="1100" cy="48" r="3"/>
+    <circle cx="1130" cy="48" r="3"/>
+    <circle cx="1160" cy="48" r="3"/>
+    <circle cx="1100" cy="76" r="3"/>
+    <circle cx="1130" cy="76" r="3"/>
+    <circle cx="1160" cy="76" r="3"/>
+  </g>
+
+  <!-- Abstract upward bars — right of center -->
+  <rect x="720" y="340" width="14" height="60" rx="7" fill="#FBBF24" opacity="0.35"/>
+  <rect x="746" y="310" width="14" height="90" rx="7" fill="#F59E0B" opacity="0.38"/>
+  <rect x="772" y="280" width="14" height="120" rx="7" fill="#FCD34D" opacity="0.3"/>
+  <rect x="798" y="258" width="14" height="142" rx="7" fill="#FBBF24" opacity="0.25"/>
+
+  <!-- Thin horizontal lines — mid section -->
+  <line x1="320" y1="200" x2="480" y2="200" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" opacity="0.25"/>
+  <line x1="300" y1="220" x2="440" y2="220" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round" opacity="0.18"/>
+</svg>

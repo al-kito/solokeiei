@@ -105,7 +105,13 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="space-y-6">
+      <section className="relative overflow-hidden rounded-3xl border border-amber-100 bg-amber-50/40 px-6 py-8 sm:px-8">
+        <div
+          className="pointer-events-none absolute inset-0 bg-cover bg-center opacity-100"
+          style={{ backgroundImage: "url('/topics-bg.svg')" }}
+        />
+
+        <div className="relative">
         <div className="flex items-end justify-between gap-4">
           <div>
             <h2 className="text-2xl font-semibold tracking-tight text-zinc-900">
@@ -147,6 +153,7 @@ export default async function Home() {
               </div>
             </Link>
           ))}
+        </div>
         </div>
       </section>
 
