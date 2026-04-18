@@ -6,90 +6,212 @@ export const metadata = {
 
 export default function WhyPage() {
   return (
-    <article className="prose prose-zinc max-w-none">
-      <p>
-        フリーランスや一人社長という働き方には「不安定」というイメージがあります。
-        副業だけであれば本業もあるため安心や安定もありますが、フリーランスや一人社長は会社員と違って収入が保証されているわけではなく、自分で仕事を作らなければならないからです。
-      </p>
+    <article className="space-y-10">
 
-      <p>
-        私は、企業に属したまま副業を始めて5年目、会社を創業してちょうど3期目に入っています。
-        まだ数年の経験しかありませんが、フリーランスや一人社長という働き方を「不安定」とはあまり感じておらず、むしろ逆に会社員時代よりも大きな安心感を感じることがあります。
-      </p>
+      {/* Hero */}
+      <section className="relative overflow-hidden rounded-3xl bg-amber-600 px-8 py-12 sm:px-12 sm:py-16">
+        <div className="pointer-events-none absolute inset-0">
+          <svg viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-full w-full">
+            {/* Large light blob — top right */}
+            <path
+              d="M620 -40 C740 -70 860 30 850 140 C842 230 760 280 650 260 C540 240 470 170 500 90 C526 20 500 -10 620 -40 Z"
+              fill="white" opacity="0.1"
+            />
+            {/* Medium blob — bottom left */}
+            <path
+              d="M -40 280 C 30 220 150 240 170 320 C 188 390 100 440 0 432 C -90 424 -120 360 -100 310 C -82 265 -110 340 -40 280 Z"
+              fill="white" opacity="0.08"
+            />
+            {/* Branching arrows — choice motif */}
+            <path d="M 680 340 L 720 300 L 760 260" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" opacity="0.35"/>
+            <path d="M 720 300 L 770 320" stroke="white" strokeWidth="3" strokeLinecap="round" opacity="0.35"/>
+            <path d="M 660 370 L 720 300" stroke="white" strokeWidth="2" strokeLinecap="round" opacity="0.25"/>
+            {/* Small circles */}
+            <circle cx="760" cy="260" r="6" fill="white" opacity="0.4"/>
+            <circle cx="770" cy="320" r="5" fill="white" opacity="0.35"/>
+            <circle cx="660" cy="370" r="4" fill="white" opacity="0.3"/>
+            {/* Dot grid */}
+            <circle cx="100" cy="60" r="2" fill="white" opacity="0.2"/>
+            <circle cx="130" cy="60" r="2" fill="white" opacity="0.2"/>
+            <circle cx="160" cy="60" r="2" fill="white" opacity="0.2"/>
+            <circle cx="100" cy="90" r="2" fill="white" opacity="0.2"/>
+            <circle cx="130" cy="90" r="2" fill="white" opacity="0.2"/>
+            <circle cx="160" cy="90" r="2" fill="white" opacity="0.2"/>
+            <circle cx="100" cy="120" r="2" fill="white" opacity="0.2"/>
+            <circle cx="130" cy="120" r="2" fill="white" opacity="0.2"/>
+            <circle cx="160" cy="120" r="2" fill="white" opacity="0.2"/>
+            {/* Abstract arc */}
+            <path d="M 400 380 Q 480 300 560 280" stroke="white" strokeWidth="2.5" strokeLinecap="round" fill="none" opacity="0.25"/>
+            <path d="M 380 380 Q 470 280 560 250" stroke="white" strokeWidth="1.5" strokeLinecap="round" fill="none" opacity="0.15"/>
+          </svg>
+        </div>
 
-      <p>
-        その理由はとてもシンプルで、<strong>「選択肢を持てている」</strong>からです。
-      </p>
+        <div className="relative max-w-2xl space-y-5">
+          <span className="inline-block rounded-full border border-white/30 bg-white/15 px-3 py-1 text-xs font-medium text-white">
+            Why このメディアを作るのか
+          </span>
+          <h1 className="text-3xl font-bold leading-tight text-white sm:text-4xl">
+            なぜ一人で働くのか
+          </h1>
+          <p className="text-base leading-8 text-amber-100 sm:text-lg">
+            フリーランスや一人社長という働き方を選んだ理由は、安定よりも「選択肢を持つ」ためです。
+          </p>
+          <div className="flex flex-wrap gap-3 pt-2">
+            <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-2 text-sm text-white">
+              <span className="h-1.5 w-1.5 rounded-full bg-amber-300" />
+              副業歴 5年
+            </span>
+            <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-2 text-sm text-white">
+              <span className="h-1.5 w-1.5 rounded-full bg-amber-300" />
+              会社創業 3期目
+            </span>
+          </div>
+        </div>
+      </section>
 
-      <h2>結論：フリーランスや一人社長は「選択肢」を持てる働き方</h2>
-      <p>
-        フリーランスや一人社長の最大のメリットは、いつでも方向転換できることです。
-      </p>
-      <p>
-        仕事の内容、働き方、収入の作り方などを自分で選び続けることができます。
-      </p>
+      {/* Opening */}
+      <section className="rounded-2xl border border-zinc-200 bg-white px-8 py-8 space-y-5">
+        <p className="text-base leading-8 text-zinc-700">
+          フリーランスや一人社長という働き方には「不安定」というイメージがあります。
+          副業だけであれば本業もあるため安心や安定もありますが、フリーランスや一人社長は会社員と違って収入が保証されているわけではなく、自分で仕事を作らなければならないからです。
+        </p>
+        <p className="text-base leading-8 text-zinc-700">
+          私は、企業に属したまま副業を始めて5年目、会社を創業してちょうど3期目に入っています。
+          まだ数年の経験しかありませんが、フリーランスや一人社長という働き方を「不安定」とはあまり感じておらず、むしろ逆に会社員時代よりも大きな安心感を感じることがあります。
+        </p>
 
-      <h2>会社員は安定しているようで、選択肢が少ない</h2>
-      <p>
-        会社員は給与が安定しています。毎月決まった収入が入り、社会保険や福利厚生も整っています。
-      </p>
-      <p>
-        ただ、その一方で自分で選べる範囲はどうしても限定されます。
-      </p>
-      <ul>
-        <li>働く場所</li>
-        <li>仕事の内容</li>
-        <li>収入の上げ方</li>
-        <li>将来の方向性</li>
-      </ul>
+        <div className="rounded-2xl border border-amber-200 bg-amber-50 px-6 py-5">
+          <p className="text-xs font-medium uppercase tracking-widest text-amber-500">その理由</p>
+          <p className="mt-2 text-2xl font-bold text-zinc-900">「選択肢を持てている」</p>
+          <p className="mt-1 text-sm leading-7 text-zinc-600">
+            いつでも方向転換できる。それが、安心感の正体です。
+          </p>
+        </div>
+      </section>
 
-      <h2>フリーランスや一人社長は不安定だが自由度が高い</h2>
-      <p>
-        フリーランスや一人社長の場合、確かに収入の保証はありません。
-      </p>
-      <p>
-        しかしその代わりに、ほぼすべてのことを自分で決めることができます。
-      </p>
-      <ul>
-        <li>どんな仕事をするか</li>
-        <li>どの顧客と仕事をするか</li>
-        <li>どのくらい働くか</li>
-        <li>どんな方向に事業を伸ばすか</li>
-      </ul>
+      {/* Section 1 — 結論 */}
+      <section className="space-y-4">
+        <div className="flex items-center gap-3">
+          <span className="flex h-7 w-7 items-center justify-center rounded-full bg-amber-600 text-xs font-bold text-white">1</span>
+          <h2 className="text-xl font-bold text-zinc-900">フリーランス・一人社長は「選択肢」を持てる働き方</h2>
+        </div>
+        <div className="rounded-2xl border border-zinc-200 bg-white px-6 py-6 space-y-3">
+          <p className="text-base leading-8 text-zinc-700">
+            フリーランスや一人社長の最大のメリットは、いつでも方向転換できることです。
+          </p>
+          <p className="text-base leading-8 text-zinc-700">
+            仕事の内容、働き方、収入の作り方などを自分で選び続けることができます。
+          </p>
+        </div>
+      </section>
 
-      <h2>方向転換できることが最大の安心になる</h2>
-      <p>
-        今の仕事がうまくいかなくなったとしても、別の仕事に挑戦することができます。
-      </p>
-      <p>
-        新しい事業を始めることも、働き方そのものを変えることもできます。
-      </p>
+      {/* Section 2 — 比較 */}
+      <section className="space-y-4">
+        <div className="flex items-center gap-3">
+          <span className="flex h-7 w-7 items-center justify-center rounded-full bg-amber-600 text-xs font-bold text-white">2</span>
+          <h2 className="text-xl font-bold text-zinc-900">会社員 vs フリーランス・一人社長</h2>
+        </div>
 
-      <h2>このメディアで伝えたいこと</h2>
-      <p>
-        このメディアでは、一人社長やフリーランスという働き方について発信していきます。
-      </p>
-      <p>
-        ただし、単に独立を勧めるわけではありません。
-      </p>
-      <p>
-        会社員、副業、フリーランス、法人化など、それぞれの働き方にはメリットとデメリットがあります。
-      </p>
-      <p>
-        大切なのは、自分にとって納得できる選択肢を持つことです。
-      </p>
+        <div className="grid gap-4 sm:grid-cols-2">
+          {/* 会社員 */}
+          <div className="rounded-2xl border border-zinc-200 bg-white p-6 space-y-4">
+            <span className="inline-block rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-600">
+              会社員
+            </span>
+            <p className="text-sm leading-7 text-zinc-600">
+              給与が安定しています。毎月決まった収入が入り、社会保険や福利厚生も整っています。
+              ただ、自分で選べる範囲はどうしても限定されます。
+            </p>
+            <div>
+              <p className="mb-2 text-xs font-medium text-zinc-500">選べる範囲が限られるもの</p>
+              <div className="flex flex-wrap gap-2">
+                {["働く場所", "仕事の内容", "収入の上げ方", "将来の方向性"].map((item) => (
+                  <span key={item} className="rounded-full border border-zinc-200 px-3 py-1 text-xs text-zinc-600">
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
 
-      <h2>まとめ</h2>
-      <p>
-        フリーランスや一人社長は、不安定な働き方だと言われることがあります。
-      </p>
-      <p>
-        しかし、見方を変えれば「選択肢を持てる働き方」でもあります。
-      </p>
-      <p>
-        働き方を自分で決められること、そして必要に応じて方向転換できること。
-        この自由度こそが、一人で事業を続ける大きな魅力だと思います。
-      </p>
+          {/* フリーランス */}
+          <div className="rounded-2xl border border-amber-200 bg-amber-50 p-6 space-y-4">
+            <span className="inline-block rounded-full bg-amber-100 px-3 py-1 text-xs font-medium text-amber-700">
+              フリーランス・一人社長
+            </span>
+            <p className="text-sm leading-7 text-zinc-600">
+              収入の保証はありません。しかしその代わりに、ほぼすべてのことを自分で決めることができます。
+            </p>
+            <div>
+              <p className="mb-2 text-xs font-medium text-amber-600">自分で選び続けられること</p>
+              <div className="flex flex-wrap gap-2">
+                {["どんな仕事をするか", "どの顧客と働くか", "どのくらい働くか", "事業の方向性"].map((item) => (
+                  <span key={item} className="rounded-full border border-amber-200 bg-white px-3 py-1 text-xs text-amber-700">
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 3 — 方向転換 */}
+      <section className="space-y-4">
+        <div className="flex items-center gap-3">
+          <span className="flex h-7 w-7 items-center justify-center rounded-full bg-amber-600 text-xs font-bold text-white">3</span>
+          <h2 className="text-xl font-bold text-zinc-900">方向転換できることが最大の安心になる</h2>
+        </div>
+        <div className="rounded-2xl border border-zinc-200 bg-white px-6 py-6 space-y-3">
+          <p className="text-base leading-8 text-zinc-700">
+            今の仕事がうまくいかなくなったとしても、別の仕事に挑戦することができます。
+          </p>
+          <p className="text-base leading-8 text-zinc-700">
+            新しい事業を始めることも、働き方そのものを変えることもできます。
+          </p>
+        </div>
+      </section>
+
+      {/* Section 4 — このメディアで伝えたいこと */}
+      <section className="space-y-4">
+        <div className="flex items-center gap-3">
+          <span className="flex h-7 w-7 items-center justify-center rounded-full bg-amber-600 text-xs font-bold text-white">4</span>
+          <h2 className="text-xl font-bold text-zinc-900">このメディアで伝えたいこと</h2>
+        </div>
+        <div className="rounded-2xl border border-zinc-200 bg-white px-6 py-6 space-y-3">
+          <p className="text-base leading-8 text-zinc-700">
+            このメディアでは、一人社長やフリーランスという働き方について発信していきます。
+            ただし、単に独立を勧めるわけではありません。
+          </p>
+          <p className="text-base leading-8 text-zinc-700">
+            会社員、副業、フリーランス、法人化など、それぞれの働き方にはメリットとデメリットがあります。
+            大切なのは、自分にとって納得できる選択肢を持つことです。
+          </p>
+          <div className="flex flex-wrap gap-2 pt-1">
+            {["会社員", "副業", "フリーランス", "法人化", "一人社長"].map((item) => (
+              <span key={item} className="rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-xs text-zinc-600">
+                {item}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* まとめ */}
+      <section className="rounded-2xl bg-zinc-900 px-8 py-8 space-y-4">
+        <p className="text-xs font-medium uppercase tracking-widest text-amber-400">まとめ</p>
+        <p className="text-base leading-8 text-zinc-300">
+          フリーランスや一人社長は、不安定な働き方だと言われることがあります。
+        </p>
+        <p className="text-xl font-semibold leading-snug text-white">
+          しかし、見方を変えれば「選択肢を持てる働き方」でもあります。
+        </p>
+        <p className="text-base leading-8 text-zinc-300">
+          働き方を自分で決められること、そして必要に応じて方向転換できること。
+          この自由度こそが、一人で事業を続ける大きな魅力だと思います。
+        </p>
+      </section>
+
     </article>
   );
 }
