@@ -47,14 +47,11 @@ export default function WhyPage() {
         </div>
 
         <div className="relative max-w-2xl space-y-5">
-          <span className="inline-block rounded-full border border-white/30 bg-white/15 px-3 py-1 text-xs font-medium text-white">
-            Why このメディアを作るのか
-          </span>
           <h1 className="text-3xl font-bold leading-tight text-white sm:text-4xl">
             なぜ一人で働くのか
           </h1>
           <p className="text-base leading-8 text-amber-100 sm:text-lg">
-            フリーランスや一人社長という働き方を選んだ理由は、安定よりも「選択肢を持つ」ためです。
+            フリーランスや一人社長という働き方を選んだ理由は、安定よりも状況に応じて方向転換できる選択肢や自由を持つためです。
           </p>
           <div className="flex flex-wrap gap-3 pt-2">
             <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-2 text-sm text-white">
@@ -64,6 +61,14 @@ export default function WhyPage() {
             <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-2 text-sm text-white">
               <span className="h-1.5 w-1.5 rounded-full bg-amber-300" />
               会社創業 3期目
+            </span>
+            <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-2 text-sm text-white">
+              <span className="h-1.5 w-1.5 rounded-full bg-amber-300" />
+              前期年商 2億
+            </span>
+            <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-2 text-sm text-white">
+              <span className="h-1.5 w-1.5 rounded-full bg-amber-300" />
+              前期利益 5千万円
             </span>
           </div>
         </div>
