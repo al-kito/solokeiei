@@ -128,7 +128,7 @@ export default function WhyPage() {
               フリーランス・一人社長
             </span>
             <p className="text-sm leading-7 text-zinc-600">
-              収入の保証はありません。しかしその代わりに、ほぼすべてのことを自分で決めることができます。
+              収入の保証はないため、日々の生活は不安定になる可能性がありますが、その代わりにほぼすべてのことを自分で決めることができます。
             </p>
             <div>
               <p className="mb-2 text-xs font-medium text-amber-600">自分で選び続けられること</p>
