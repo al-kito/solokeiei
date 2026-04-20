@@ -12,25 +12,20 @@ export default function WhyPage() {
       <section className="relative overflow-hidden rounded-lg bg-amber-600 px-8 py-12 sm:px-12 sm:py-16">
         <div className="pointer-events-none absolute inset-0">
           <svg viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-full w-full">
-            {/* Large light blob — top right */}
             <path
               d="M620 -40 C740 -70 860 30 850 140 C842 230 760 280 650 260 C540 240 470 170 500 90 C526 20 500 -10 620 -40 Z"
               fill="white" opacity="0.1"
             />
-            {/* Medium blob — bottom left */}
             <path
               d="M -40 280 C 30 220 150 240 170 320 C 188 390 100 440 0 432 C -90 424 -120 360 -100 310 C -82 265 -110 340 -40 280 Z"
               fill="white" opacity="0.08"
             />
-            {/* Branching arrows — choice motif */}
             <path d="M 680 340 L 720 300 L 760 260" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" opacity="0.35"/>
             <path d="M 720 300 L 770 320" stroke="white" strokeWidth="3" strokeLinecap="round" opacity="0.35"/>
             <path d="M 660 370 L 720 300" stroke="white" strokeWidth="2" strokeLinecap="round" opacity="0.25"/>
-            {/* Small circles */}
             <circle cx="760" cy="260" r="6" fill="white" opacity="0.4"/>
             <circle cx="770" cy="320" r="5" fill="white" opacity="0.35"/>
             <circle cx="660" cy="370" r="4" fill="white" opacity="0.3"/>
-            {/* Dot grid */}
             <circle cx="100" cy="60" r="2" fill="white" opacity="0.2"/>
             <circle cx="130" cy="60" r="2" fill="white" opacity="0.2"/>
             <circle cx="160" cy="60" r="2" fill="white" opacity="0.2"/>
@@ -40,7 +35,6 @@ export default function WhyPage() {
             <circle cx="100" cy="120" r="2" fill="white" opacity="0.2"/>
             <circle cx="130" cy="120" r="2" fill="white" opacity="0.2"/>
             <circle cx="160" cy="120" r="2" fill="white" opacity="0.2"/>
-            {/* Abstract arc */}
             <path d="M 400 380 Q 480 300 560 280" stroke="white" strokeWidth="2.5" strokeLinecap="round" fill="none" opacity="0.25"/>
             <path d="M 380 380 Q 470 280 560 250" stroke="white" strokeWidth="1.5" strokeLinecap="round" fill="none" opacity="0.15"/>
           </svg>
@@ -86,8 +80,8 @@ export default function WhyPage() {
           <p className="text-base leading-8 text-zinc-700">
             毎週、毎月のように方向転換している様ではまずいですが、数年単位で見たときに必要に応じて働き方や仕事の内容を変えていけることは大きな安心感になります。
             職種や業界など仕事の内容だけでなく、働き方や収入の作り方などを自分で選び続けることができますし、必要に応じて会社員に戻ることもできます。
-        </p>
-        <p className="text-base leading-8 text-zinc-700">
+          </p>
+          <p className="text-base leading-8 text-zinc-700">
             これだけ見ると難しかったり大変そうに思う方もいると思いますが、昨今のAI産業革命期では大手企業に居ても安定は安心は約束されていませんし、会社員を長く続けるといつの間にか選択肢が狭まっていることが多いです。そういった事を踏まえると、状況に応じた選択肢を持ち続けることが今後の安心感につながると私は感じています。
           </p>
         </div>
@@ -133,7 +127,7 @@ export default function WhyPage() {
             <div>
               <p className="mb-2 text-xs font-medium text-amber-600">自分で選び続けられること</p>
               <div className="flex flex-wrap gap-2">
-                {["どんな仕事をするか","手取りをいくらにするか", "どの顧客と働くか", "どのくらい働くか", "事業の方向性"].map((item) => (
+                {["どんな仕事をするか", "手取りをいくらにするか", "どの顧客と働くか", "どのくらい働くか", "事業の方向性"].map((item) => (
                   <span key={item} className="rounded-full border border-amber-200 bg-white px-3 py-1 text-xs text-amber-700">
                     {item}
                   </span>
@@ -144,26 +138,90 @@ export default function WhyPage() {
         </div>
       </section>
 
-      {/* Section 3 — 方向転換 */}
+      {/* Section 3 — 著者の歩み */}
       <section className="space-y-4">
         <div className="flex items-center gap-3">
           <span className="flex h-7 w-7 items-center justify-center rounded-full bg-amber-600 text-xs font-bold text-white">3</span>
-          <h2 className="text-xl font-bold text-zinc-900">方向転換できることが最大の安心になる</h2>
+          <h2 className="text-xl font-bold text-zinc-900">私の歩み</h2>
         </div>
-        <div className="rounded-lg border border-zinc-200 bg-white px-6 py-6 space-y-3">
-          <p className="text-base leading-8 text-zinc-700">
-            今の仕事がうまくいかなくなったとしても、別の仕事に挑戦することができます。
-          </p>
-          <p className="text-base leading-8 text-zinc-700">
-            新しい事業を始めることも、働き方そのものを変えることもできます。
-          </p>
+        <div className="rounded-lg border border-zinc-200 bg-white px-6 py-6">
+          <ol className="relative space-y-0 border-l border-amber-200">
+
+            <li className="pb-8 pl-6">
+              <span className="absolute -left-2.5 flex h-5 w-5 items-center justify-center rounded-full bg-amber-600 text-xs font-bold text-white">
+              </span>
+              <p className="text-xs font-semibold text-amber-600">2004年</p>
+              <p className="mt-1 text-base font-semibold text-zinc-900">IT業界に就職</p>
+              <p className="mt-1 text-base leading-8 text-zinc-700">
+                新卒でIT企業に入社。インフラエンジニアとしてキャリアをスタートし、サーバー・ネットワーク構築や運用保守を担当。その後、プリセールス支援やプロジェクトマネジメントへと領域を広げる。若い頃から「いつかは独立したい」という気持ちを持ちながら、20年近く会社員として経験を積む。
+              </p>
+            </li>
+
+            <li className="pb-8 pl-6">
+              <span className="absolute -left-2.5 flex h-5 w-5 items-center justify-center rounded-full bg-amber-600 text-xs font-bold text-white">
+              </span>
+              <p className="text-xs font-semibold text-amber-600">2021年</p>
+              <p className="mt-1 text-base font-semibold text-zinc-900">在職しながら副業を開始</p>
+              <p className="mt-1 text-base leading-8 text-zinc-700">
+                会社員を続けながら個人事業主として副業を始める。インフラ構築・プリセールス支援・Webサイト制作など、これまでの経験を活かしたITエンジニアリングを中心に活動。「会社の外でも通用するか」を試す感覚でスタートしたが、徐々に手応えを感じるようになる。
+              </p>
+            </li>
+
+            <li className="pb-8 pl-6">
+              <span className="absolute -left-2.5 flex h-5 w-5 items-center justify-center rounded-full bg-amber-600 text-xs font-bold text-white">
+              </span>
+              <p className="text-xs font-semibold text-amber-600">2024年</p>
+              <p className="mt-1 text-base font-semibold text-zinc-900">法人を設立（現在3期目）</p>
+              <p className="mt-1 text-base leading-8 text-zinc-700">
+                副業での実績と自信を積み重ね、法人化を決断。当初は採用・組織拡大も視野に入れていたが、利益率・意思決定の速さ・自由度を最優先した結果、現在は一人社長として経営している。事業内容はITコンサルティング・プロジェクトマネジメント・コーチングを中心に展開。
+              </p>
+            </li>
+
+            <li className="pl-6">
+              <span className="absolute -left-2.5 flex h-5 w-5 items-center justify-center rounded-full bg-amber-400 text-xs font-bold text-white">
+              </span>
+              <p className="text-xs font-semibold text-amber-500">まもなく</p>
+              <p className="mt-1 text-base font-semibold text-zinc-900">会社員としてのキャリアに区切り</p>
+              <p className="mt-1 text-base leading-8 text-zinc-700">
+                現在も役員として会社に在籍しているが、半年後に退職予定。20年以上の会社員経験に区切りをつけ、一人社長・フリーランスとして本格的に独立する。
+              </p>
+            </li>
+
+          </ol>
         </div>
       </section>
 
-      {/* Section 4 — このメディアで伝えたいこと */}
+      {/* Section 4 — 対象読者 */}
       <section className="space-y-4">
         <div className="flex items-center gap-3">
           <span className="flex h-7 w-7 items-center justify-center rounded-full bg-amber-600 text-xs font-bold text-white">4</span>
+          <h2 className="text-xl font-bold text-zinc-900">このメディアは誰のためか</h2>
+        </div>
+        <div className="rounded-lg border border-zinc-200 bg-white px-6 py-6 space-y-5">
+          <p className="text-base leading-8 text-zinc-700">
+            このメディアは、独立や一人経営を「すすめる」場所ではありません。
+            会社員、副業、フリーランス、法人化、それぞれの選択肢を正直に比較しながら、自分に合った働き方を考えるヒントを届けたいと思っています。
+          </p>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {[
+              { label: "今の働き方に漠然と不安を感じている会社員", desc: "給与は安定しているが、このまま続けていていいのかと感じている方" },
+              { label: "副業を始めたいが何から手をつければいいか分からない方", desc: "本業を続けながら収入の柱を増やしたいと考えている方" },
+              { label: "フリーランス・独立を考えているが踏み出せない方", desc: "リスクや準備について具体的なイメージを持ちたい方" },
+              { label: "一人社長・フリーランスとしてもっと効率よく稼ぎたい方", desc: "利益率や固定費の考え方、採用しない経営に興味がある方" },
+            ].map((item) => (
+              <div key={item.label} className="rounded-lg border border-zinc-100 bg-zinc-50 px-4 py-4">
+                <p className="text-sm font-semibold leading-7 text-zinc-900">{item.label}</p>
+                <p className="mt-1 text-sm leading-7 text-zinc-600">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 5 — このメディアで伝えたいこと */}
+      <section className="space-y-4">
+        <div className="flex items-center gap-3">
+          <span className="flex h-7 w-7 items-center justify-center rounded-full bg-amber-600 text-xs font-bold text-white">5</span>
           <h2 className="text-xl font-bold text-zinc-900">このメディアで伝えたいこと</h2>
         </div>
         <div className="rounded-lg border border-zinc-200 bg-white px-6 py-6 space-y-3">
