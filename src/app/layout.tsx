@@ -90,8 +90,8 @@ export default function RootLayout({
               <Link href="/articles" className="transition hover:text-amber-600">
                 記事
               </Link>
-              <Link href="/why" className="transition hover:text-amber-600">
-                Why
+              <Link href="/omoi" className="transition hover:text-amber-600">
+                想い
               </Link>
             </nav>
           </header>

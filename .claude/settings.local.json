@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /Users/itoukouhei/Documents/git/solokeiei add src/app/layout.tsx src/app/page.tsx src/app/articles/page.tsx \"src/app/articles/[slug]/page.tsx\" \"src/app/topics/[slug]/page.tsx\")",
+      "Bash(git -C /Users/itoukouhei/Documents/git/solokeiei diff --staged --stat)",
+      "Bash(git -C /Users/itoukouhei/Documents/git/solokeiei add src/app/why/page.tsx)",
+      "Bash(git -C /Users/itoukouhei/Documents/git/solokeiei commit -m ' *)",
+      "Bash(git -C /Users/itoukouhei/Documents/git/solokeiei push origin main)"
+    ]
+  }
+}

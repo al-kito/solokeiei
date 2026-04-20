@@ -63,7 +63,7 @@ export default async function Home() {
                 記事一覧を見る
               </Link>
               <Link
-                href="/why"
+                href="/omoi"
                 className="rounded-full border border-zinc-300 bg-white/90 px-5 py-3 text-sm font-medium text-zinc-800 no-underline transition hover:border-amber-400 hover:bg-white hover:text-amber-700"
               >
                 なぜこのメディアを作るのか
@@ -246,10 +246,10 @@ export default async function Home() {
             </p>
             <div className="mt-5">
               <Link
-                href="/why"
+                href="/omoi"
                 className="text-sm font-medium text-amber-600 underline decoration-amber-300 underline-offset-4 hover:decoration-amber-600"
               >
-                whyページを読む
+                想いページを読む
               </Link>
             </div>
           </section>
@@ -267,7 +267,7 @@ export default async function Home() {
             <p className="text-sm text-zinc-500">最初に読むなら</p>
             <div className="mt-3 space-y-3">
               <Link
-                href="/why"
+                href="/omoi"
                 className="block rounded-2xl bg-amber-50 px-4 py-3 text-sm font-medium text-amber-800 no-underline transition hover:bg-amber-100"
               >
                 なぜ一人で働くのか
