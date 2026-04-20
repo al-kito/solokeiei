@@ -48,10 +48,10 @@ export default function WhyPage() {
 
         <div className="relative space-y-5">
           <h1 className="text-3xl font-bold leading-tight text-white sm:text-4xl">
-            なぜ一人で働くのか
+            なぜ一人で働くのか？
           </h1>
           <p className="text-base leading-8 text-amber-100 sm:text-lg">
-            一人社長という働き方を選んだ理由は、安定よりも状況に応じて方向転換できる選択肢や自由を持つためです。
+            私が一人社長という働き方を選んだ理由は、雇用の安定よりも状況に応じて方向転換できる選択肢や自由が本当の意味で心身の安定となり、更には自己成長に繋がるためです。
           </p>
         </div>
       </section>
@@ -64,14 +64,14 @@ export default function WhyPage() {
         </p>
         <p className="text-base leading-8 text-zinc-700">
           私は、企業に属したまま副業を始めて5年目、会社を創業してちょうど3期目に入っています。
-          まだ数年の経験しかありませんが、フリーランスや一人社長という働き方を「不安定」とはあまり感じておらず、むしろ逆に会社員時代よりも大きな安心感を感じることがあります。
+          フリーランス（個人事業主）も社長まだ数年の経験しかありませんが、フリーランスや一人社長という働き方を「不安定」とはあまり感じておらず、むしろ逆に会社員時代よりも大きな安心感や達成感を感じています。
         </p>
 
         <div className="rounded-xl border border-amber-200 bg-amber-50 px-6 py-5">
           <p className="text-xs font-medium uppercase tracking-widest text-amber-500">その理由は</p>
           <p className="mt-2 text-2xl font-bold text-zinc-900">選択肢を持てている</p>
           <p className="mt-1 text-sm leading-7 text-zinc-600">
-            いつでも方向転換できる。それが、安心感の正体です。
+            いつでも方向転換できる自由。それが安心感の理由だと考えています。
           </p>
         </div>
       </section>
