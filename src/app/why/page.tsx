@@ -64,14 +64,14 @@ export default function WhyPage() {
         </p>
         <p className="text-base leading-8 text-zinc-700">
           私は、企業に属したまま副業を始めて5年目、会社を創業してちょうど3期目に入っています。
-          フリーランス（個人事業主）も社長まだ数年の経験しかありませんが、フリーランスや一人社長という働き方を「不安定」とはあまり感じておらず、むしろ逆に会社員時代よりも大きな安心感や達成感を感じています。
+          フリーランス（個人事業主）も社長まだ数年の経験しかありませんが、フリーランスや一人社長という働き方を「不安定」とはあまり感じておらず、むしろ逆に会社員時代よりも大きな安心感を感じています。
         </p>
 
         <div className="border-l-4 border-amber-500 bg-white pl-5 py-4">
           <p className="text-xs font-semibold text-amber-600">その理由は、</p>
-          <p className="mt-1 text-2xl font-bold text-zinc-900">いつでも方向転換できる選択肢や自由を持てており、またその準備をいつもしているから</p>
+          <p className="mt-1 text-2xl font-bold text-zinc-900">いつでも方向転換できる選択肢や自由があり、またその準備をいつも心掛けているから</p>
           <p className="mt-2 text-sm leading-7 text-zinc-600">
-            です。いつでも方向転換できる自由がフリーランスや一人社長の最大のメリットであり、それが安心感の理由だと考えています。
+            いつでも方向転換できる自由がフリーランスや一人社長の最大のメリットであり、それが安心感の理由だと考えています。
           </p>
         </div>
       </section>
@@ -84,10 +84,9 @@ export default function WhyPage() {
         </div>
         <div className="rounded-lg border border-zinc-200 bg-white px-6 py-6 space-y-3">
           <p className="text-base leading-8 text-zinc-700">
-            フリーランスや一人社長の最大のメリットは、いつでも方向転換できることです。
-          </p>
-          <p className="text-base leading-8 text-zinc-700">
-            仕事の内容、働き方、収入の作り方などを自分で選び続けることができます。
+            毎週、毎月のように方向転換している様ではまずいですが、数年単位で見たときに必要に応じて働き方や仕事の内容を変えていけることは大きな安心感になります。
+            職種や業界など仕事の内容だけでなく、働き方や収入の作り方などを自分で選び続けることができますし、必要に応じて会社員に戻ることもできます。
+            これだけ見ると難しかったり大変そうに思う方もいると思いますが、会社員を長く続けるといつの間にか選択肢が狭まっていることも多いので、むしろ選択肢を持ち続けることの方が安心感につながると私は感じています。
           </p>
         </div>
       </section>
