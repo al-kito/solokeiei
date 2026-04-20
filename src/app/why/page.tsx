@@ -68,10 +68,10 @@ export default function WhyPage() {
         </p>
 
         <div className="border-l-4 border-amber-500 bg-white pl-5 py-4">
-          <p className="text-xs font-semibold text-amber-600">その理由は、</p>
-          <p className="mt-1 text-2xl font-bold text-zinc-900">いつでも方向転換できる選択肢や自由があり、またその準備をいつも心掛けているから</p>
+          <p className="text-xs font-semibold text-amber-600">その理由は</p>
+          <p className="mt-1 text-2xl font-bold text-zinc-900">いつでも方向転換できる選択肢や自由があるから</p>
           <p className="mt-2 text-sm leading-7 text-zinc-600">
-            いつでも方向転換できる自由がフリーランスや一人社長の最大のメリットであり、それが安心感の理由だと考えています。
+            いつでも方向転換できる自由がフリーランスや一人社長の最大のメリットであり、それが安心感の理由だと考えています（方向転換できる自由のために常に準備は必要です）。
           </p>
         </div>
       </section>
@@ -86,6 +86,8 @@ export default function WhyPage() {
           <p className="text-base leading-8 text-zinc-700">
             毎週、毎月のように方向転換している様ではまずいですが、数年単位で見たときに必要に応じて働き方や仕事の内容を変えていけることは大きな安心感になります。
             職種や業界など仕事の内容だけでなく、働き方や収入の作り方などを自分で選び続けることができますし、必要に応じて会社員に戻ることもできます。
+        </p>
+        <p className="text-base leading-8 text-zinc-700">
             これだけ見ると難しかったり大変そうに思う方もいると思いますが、会社員を長く続けるといつの間にか選択肢が狭まっていることも多いので、むしろ選択肢を持ち続けることの方が安心感につながると私は感じています。
           </p>
         </div>
