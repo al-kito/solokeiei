@@ -46,31 +46,13 @@ export default function WhyPage() {
           </svg>
         </div>
 
-        <div className="relative max-w-2xl space-y-5">
+        <div className="relative space-y-5">
           <h1 className="text-3xl font-bold leading-tight text-white sm:text-4xl">
             なぜ一人で働くのか
           </h1>
           <p className="text-base leading-8 text-amber-100 sm:text-lg">
-            フリーランスや一人社長という働き方を選んだ理由は、安定よりも状況に応じて方向転換できる選択肢や自由を持つためです。
+            一人社長という働き方を選んだ理由は、安定よりも状況に応じて方向転換できる選択肢や自由を持つためです。
           </p>
-          <div className="flex flex-wrap gap-3 pt-2">
-            <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-2 text-sm text-white">
-              <span className="h-1.5 w-1.5 rounded-full bg-amber-300" />
-              副業歴 5年
-            </span>
-            <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-2 text-sm text-white">
-              <span className="h-1.5 w-1.5 rounded-full bg-amber-300" />
-              会社創業 3期目
-            </span>
-            <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-2 text-sm text-white">
-              <span className="h-1.5 w-1.5 rounded-full bg-amber-300" />
-              前期年商 2億
-            </span>
-            <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-2 text-sm text-white">
-              <span className="h-1.5 w-1.5 rounded-full bg-amber-300" />
-              前期利益 5千万円
-            </span>
-          </div>
         </div>
       </section>
 
@@ -86,8 +68,8 @@ export default function WhyPage() {
         </p>
 
         <div className="rounded-xl border border-amber-200 bg-amber-50 px-6 py-5">
-          <p className="text-xs font-medium uppercase tracking-widest text-amber-500">その理由</p>
-          <p className="mt-2 text-2xl font-bold text-zinc-900">「選択肢を持てている」</p>
+          <p className="text-xs font-medium uppercase tracking-widest text-amber-500">その理由は</p>
+          <p className="mt-2 text-2xl font-bold text-zinc-900">選択肢を持てている</p>
           <p className="mt-1 text-sm leading-7 text-zinc-600">
             いつでも方向転換できる。それが、安心感の正体です。
           </p>
