@@ -9,7 +9,7 @@ export default function WhyPage() {
     <article className="space-y-10">
 
       {/* Hero */}
-      <section className="relative overflow-hidden rounded-xl bg-amber-600 px-8 py-12 sm:px-12 sm:py-16">
+      <section className="relative overflow-hidden rounded-lg bg-amber-600 px-8 py-12 sm:px-12 sm:py-16">
         <div className="pointer-events-none absolute inset-0">
           <svg viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-full w-full">
             {/* Large light blob — top right */}
@@ -57,7 +57,7 @@ export default function WhyPage() {
       </section>
 
       {/* Opening */}
-      <section className="rounded-xl border border-zinc-200 bg-white px-8 py-8 space-y-5">
+      <section className="rounded-lg border border-zinc-200 bg-white px-8 py-8 space-y-5">
         <p className="text-base leading-8 text-zinc-700">
           フリーランスや一人社長という働き方には「不安定」というイメージがあります。
           副業だけであれば本業もあるため安心や安定もありますが、フリーランスや一人社長は会社員と違って収入が保証されているわけではなく、自分で仕事を作らなければならないからです。
@@ -67,10 +67,10 @@ export default function WhyPage() {
           フリーランス（個人事業主）も社長まだ数年の経験しかありませんが、フリーランスや一人社長という働き方を「不安定」とはあまり感じておらず、むしろ逆に会社員時代よりも大きな安心感や達成感を感じています。
         </p>
 
-        <div className="rounded-xl border border-amber-200 bg-amber-50 px-6 py-5">
-          <p className="text-xs font-medium uppercase tracking-widest text-amber-500">その理由は</p>
-          <p className="mt-2 text-2xl font-bold text-zinc-900">選択肢を持てている</p>
-          <p className="mt-1 text-sm leading-7 text-zinc-600">
+        <div className="border-l-4 border-amber-500 bg-white pl-5 py-4">
+          <p className="text-xs font-semibold text-amber-600">その理由は</p>
+          <p className="mt-1 text-2xl font-bold text-zinc-900">選択肢を持てている</p>
+          <p className="mt-2 text-sm leading-7 text-zinc-600">
             いつでも方向転換できる自由。それが安心感の理由だと考えています。
           </p>
         </div>
@@ -82,7 +82,7 @@ export default function WhyPage() {
           <span className="flex h-7 w-7 items-center justify-center rounded-full bg-amber-600 text-xs font-bold text-white">1</span>
           <h2 className="text-xl font-bold text-zinc-900">フリーランス・一人社長は「選択肢」を持てる働き方</h2>
         </div>
-        <div className="rounded-xl border border-zinc-200 bg-white px-6 py-6 space-y-3">
+        <div className="rounded-lg border border-zinc-200 bg-white px-6 py-6 space-y-3">
           <p className="text-base leading-8 text-zinc-700">
             フリーランスや一人社長の最大のメリットは、いつでも方向転換できることです。
           </p>
@@ -101,7 +101,7 @@ export default function WhyPage() {
 
         <div className="grid gap-4 sm:grid-cols-2">
           {/* 会社員 */}
-          <div className="rounded-xl border border-zinc-200 bg-white p-6 space-y-4">
+          <div className="rounded-lg border border-zinc-200 bg-white p-6 space-y-4">
             <span className="inline-block rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-600">
               会社員
             </span>
@@ -122,7 +122,7 @@ export default function WhyPage() {
           </div>
 
           {/* フリーランス */}
-          <div className="rounded-xl border border-amber-200 bg-amber-50 p-6 space-y-4">
+          <div className="rounded-lg border border-amber-200 bg-amber-50 p-6 space-y-4">
             <span className="inline-block rounded-full bg-amber-100 px-3 py-1 text-xs font-medium text-amber-700">
               フリーランス・一人社長
             </span>
@@ -149,7 +149,7 @@ export default function WhyPage() {
           <span className="flex h-7 w-7 items-center justify-center rounded-full bg-amber-600 text-xs font-bold text-white">3</span>
           <h2 className="text-xl font-bold text-zinc-900">方向転換できることが最大の安心になる</h2>
         </div>
-        <div className="rounded-xl border border-zinc-200 bg-white px-6 py-6 space-y-3">
+        <div className="rounded-lg border border-zinc-200 bg-white px-6 py-6 space-y-3">
           <p className="text-base leading-8 text-zinc-700">
             今の仕事がうまくいかなくなったとしても、別の仕事に挑戦することができます。
           </p>
@@ -165,7 +165,7 @@ export default function WhyPage() {
           <span className="flex h-7 w-7 items-center justify-center rounded-full bg-amber-600 text-xs font-bold text-white">4</span>
           <h2 className="text-xl font-bold text-zinc-900">このメディアで伝えたいこと</h2>
         </div>
-        <div className="rounded-xl border border-zinc-200 bg-white px-6 py-6 space-y-3">
+        <div className="rounded-lg border border-zinc-200 bg-white px-6 py-6 space-y-3">
           <p className="text-base leading-8 text-zinc-700">
             このメディアでは、一人社長やフリーランスという働き方について発信していきます。
             ただし、単に独立を勧めるわけではありません。
@@ -185,7 +185,7 @@ export default function WhyPage() {
       </section>
 
       {/* まとめ */}
-      <section className="rounded-xl bg-zinc-900 px-8 py-8 space-y-4">
+      <section className="rounded-lg bg-zinc-900 px-8 py-8 space-y-4">
         <p className="text-xs font-medium uppercase tracking-widest text-amber-400">まとめ</p>
         <p className="text-base leading-8 text-zinc-300">
           フリーランスや一人社長は、不安定な働き方だと言われることがあります。
