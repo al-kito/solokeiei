@@ -68,10 +68,10 @@ export default function WhyPage() {
         </p>
 
         <div className="border-l-4 border-amber-500 bg-white pl-5 py-4">
-          <p className="text-xs font-semibold text-amber-600">その理由は</p>
-          <p className="mt-1 text-2xl font-bold text-zinc-900">選択肢を持てている</p>
+          <p className="text-xs font-semibold text-amber-600">その理由は、</p>
+          <p className="mt-1 text-2xl font-bold text-zinc-900">いつでも方向転換できる選択肢や自由を持てており、またその準備をいつもしているから</p>
           <p className="mt-2 text-sm leading-7 text-zinc-600">
-            いつでも方向転換できる自由。それが安心感の理由だと考えています。
+            です。いつでも方向転換できる自由がフリーランスや一人社長の最大のメリットであり、それが安心感の理由だと考えています。
           </p>
         </div>
       </section>
