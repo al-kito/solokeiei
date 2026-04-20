@@ -71,7 +71,7 @@ export default function WhyPage() {
           <p className="text-xs font-semibold text-amber-600">その理由は</p>
           <p className="mt-1 text-2xl font-bold text-zinc-900">いつでも方向転換できる選択肢や自由があるから</p>
           <p className="mt-2 text-sm leading-7 text-zinc-600">
-            いつでも方向転換できる自由がフリーランスや一人社長の最大のメリットであり、それが安心感の理由だと考えています（方向転換できる自由のために常に準備は必要です）。
+            いつでも方向転換できる自由がフリーランスや一人社長の最大のメリットであり、それが安心感の理由だと考えています（方向転換できるように常に準備は必要です）。
           </p>
         </div>
       </section>
@@ -88,7 +88,7 @@ export default function WhyPage() {
             職種や業界など仕事の内容だけでなく、働き方や収入の作り方などを自分で選び続けることができますし、必要に応じて会社員に戻ることもできます。
         </p>
         <p className="text-base leading-8 text-zinc-700">
-            これだけ見ると難しかったり大変そうに思う方もいると思いますが、会社員を長く続けるといつの間にか選択肢が狭まっていることも多いので、むしろ選択肢を持ち続けることの方が安心感につながると私は感じています。
+            これだけ見ると難しかったり大変そうに思う方もいると思いますが、昨今のAI産業革命期では大手企業に居ても安定は安心は約束されていませんし、会社員を長く続けるといつの間にか選択肢が狭まっていることが多いです。そういった事を踏まえると、状況に応じた選択肢を持ち続けることが今後の安心感につながると私は感じています。
           </p>
         </div>
       </section>
@@ -107,13 +107,13 @@ export default function WhyPage() {
               会社員
             </span>
             <p className="text-sm leading-7 text-zinc-600">
-              給与が安定しています。毎月決まった収入が入り、社会保険や福利厚生も整っています。
-              ただ、自分で選べる範囲はどうしても限定されます。
+              毎月決まった収入（給料）が入り、安定しています。また、社会保険や福利厚生など日々の生活を支える保証も整っています。
+              ただ、自分で選べる範囲はどうしても限定され、成果に応じた報酬を受け取る機会が限られることがあります。
             </p>
             <div>
               <p className="mb-2 text-xs font-medium text-zinc-500">選べる範囲が限られるもの</p>
               <div className="flex flex-wrap gap-2">
-                {["働く場所", "仕事の内容", "収入の上げ方", "将来の方向性"].map((item) => (
+                {["給料（収入金額）", "働く場所", "仕事の内容", "収入の上げ方", "将来の方向性"].map((item) => (
                   <span key={item} className="rounded-full border border-zinc-200 px-3 py-1 text-xs text-zinc-600">
                     {item}
                   </span>
@@ -133,7 +133,7 @@ export default function WhyPage() {
             <div>
               <p className="mb-2 text-xs font-medium text-amber-600">自分で選び続けられること</p>
               <div className="flex flex-wrap gap-2">
-                {["どんな仕事をするか", "どの顧客と働くか", "どのくらい働くか", "事業の方向性"].map((item) => (
+                {["どんな仕事をするか","手取りをいくらにするか", "どの顧客と働くか", "どのくらい働くか", "事業の方向性"].map((item) => (
                   <span key={item} className="rounded-full border border-amber-200 bg-white px-3 py-1 text-xs text-amber-700">
                     {item}
                   </span>
