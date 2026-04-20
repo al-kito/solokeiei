@@ -106,9 +106,9 @@ export default function WhyPage() {
             <span className="inline-block rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-600">
               会社員
             </span>
-            <p className="text-sm leading-7 text-zinc-600">
+            <p className="text-base leading-8 text-zinc-600">
               毎月決まった収入（給料）が入り、安定しています。また、社会保険や福利厚生など日々の生活を支える保証も整っています。
-              ただ、自分で選べる範囲はどうしても限定され、成果に応じた報酬を受け取る機会が限られることがあります。
+              ただ、自分で選べる範囲はどうしても限定されます。
             </p>
             <div>
               <p className="mb-2 text-xs font-medium text-zinc-500">選べる範囲が限られるもの</p>
@@ -127,8 +127,8 @@ export default function WhyPage() {
             <span className="inline-block rounded-full bg-amber-100 px-3 py-1 text-xs font-medium text-amber-700">
               フリーランス・一人社長
             </span>
-            <p className="text-sm leading-7 text-zinc-600">
-              収入の保証はないため、日々の生活は不安定になる可能性がありますが、その代わりにほぼすべてのことを自分で決めることができます。
+            <p className="text-base leading-8 text-zinc-600">
+              収入の保証はないため、日々の生活は不安定になる可能性がありますが、その代わりにほぼすべてのことをいつでも自分で決めることができます。
             </p>
             <div>
               <p className="mb-2 text-xs font-medium text-amber-600">自分で選び続けられること</p>
